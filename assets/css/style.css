@@ -1,0 +1,18 @@
+main {
+  display: grid;
+  /* grid-template-columns: 0.4fr .60fr; */
+  grid-gap: 15px;
+}
+
+main > section {
+  height: 250px;
+  background: blueviolet;
+}
+
+section#ds-data-collection {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+section#ds-dataviz {
+  grid-column: 4 / 10;
+}

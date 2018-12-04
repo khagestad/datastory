@@ -1,18 +1,47 @@
-main {
-  display: grid;
-  /* grid-template-columns: 0.4fr .60fr; */
-  grid-gap: 15px;
-}
 
-main > section {
-  height: 250px;
-  background: blueviolet;
-}
-
-section#ds-data-collection {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-}
-section#ds-dataviz {
-  grid-column: 4 / 10;
-}
+  .gridwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px 200px 300px 200px 100px;
+    grid-gap: 15px;
+  }
+  .title {
+    grid-column: 1 / 6;
+    grid-row: 1;
+  }
+  .intro {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+  .introimg {
+    grid-column: 4 / 6;
+    grid-row: 2;
+  }
+  .datacollectionimg {
+    grid-column: 2 / 6;
+    grid-row: 3;
+  }
+  .datacollectioninfo {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+  .dataviz {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+  .datavizimg {
+    grid-column: 4 / 6;
+    grid-row: 4;
+  }
+  .explainedvid {
+    grid-column: 2 / 6;
+    grid-row: 5;
+  }
+  .explainedvideoinfo {
+    grid-column: 1 / 2;
+    grid-row: 5;
+  }
+  .conclusion {
+    grid-column: 1 / 6;
+    grid-row: 6;
+  }
